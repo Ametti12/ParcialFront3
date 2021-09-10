@@ -3,7 +3,7 @@ import Opciones from "./Opciones";
 import Historia from "./Historia";
 import data from "../data.json";
 import Recordatorio from "./Recordatorio";
-import Swal from "sweetalert2";
+import Swal from 'sweetalert2'
 
 class Layout extends React.Component {
   constructor(props) {
@@ -17,7 +17,16 @@ class Layout extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  
+  componentDidMount(){
+    new Swal ({
+        title: 'Nueva Historia!',
+        text: 'Elige tu propia aventura',
+        icon: 'info',
+        confirmButtonColor: '#3085d9', 
+        confirmButtonText: 'Go!'
+     })
+
+  }
 
 
   handleClick(boton) {
