@@ -53,7 +53,7 @@ class Layout extends React.Component {
       contador: this.state.contador + 1,
       listaHistorial: [
         ...this.state.listaHistorial,
-        this.state.seleccionPrevia,
+        boton,
       ],
     });
   }
